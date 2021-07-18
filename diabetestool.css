@@ -1,0 +1,165 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#bmiQuizFields {
+    background-color: #F8F8F8;
+    border: 1px, #000;
+    display: block;
+    margin: 0 10px auto;
+    margin-top: 60px;
+    width: 1200px;
+    height: 430px;
+    border: 3px solid #7d8184;
+}
+
+#calculate, #Submit {
+    background-color: #89d0f5;
+    font-weight: bold;
+    font-size: 1.1em;
+    float: left;
+    clear: both;
+    padding: 16px;
+    margin-left: 20px;
+    border: none;
+}
+
+#calculate:hover, #Submit:hover {
+    background-color: #b9d3e0;
+}
+
+.column {
+    float: left;
+    width: 19%;
+}
+
+.question {
+    float: left;
+    display: block;
+    margin: 1em 1.5em 2.5em 1.5em;
+    padding: 2px;
+    width: 17%;
+    clear: both;
+    font-weight: bold;
+}
+
+
+.results {
+    display: none;
+}
+
+.displayResults {
+    background-color: #bae1f5;
+    width: 1200px;
+    margin: 0 10px auto;
+    margin-top: 15px;
+    padding: 1px 12px 10px 12px;
+}
+
+
+
+/* CONTACT FORM */
+
+
+#contact {
+    font-weight: bold;
+    width: 1400px;
+    margin: 0 280px auto;
+}
+
+
+#contactFields {
+    background-color: #F8F8F8;
+    border: 1px, #000;
+    display: block;
+    margin-top: 50px;
+    width: 50%;
+    border: 3px solid #7d8184;
+}
+
+#contact label {
+    display: block;
+    margin-left: 40px;
+    margin-top: 35px;
+}
+
+#contact input, select {
+    width: 80%;
+    display: block;
+    margin: 5px 0 4px 40px;
+}
+
+input#Submit {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+.information-image {
+    position: relative;	
+    background: url(images/information-icon.png) top left no-repeat;
+    padding: 7px 10px 0px 20px;
+}
+
+/* https://www.w3schools.com/css/css_tooltip.asp */
+
+.tooltip {
+    background: #fff;
+    padding: 1.5em;
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    bottom: 51.7%;
+    left: 0.1%;
+    margin-left: 365px;
+    border: 2.5px solid #45afe5;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.tooltip::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -9px;
+    border-width: 13px;
+    border-style: solid;
+    border-color: transparent transparent transparent #45afe5;
+}
+
+.tooltip-hide {
+    display: none;
+}
+
+.error {
+    font-weight: normal;
+    font-size: 0.9em;
+    color: #D8000C;
+    padding-left: 40px;
+}
+
+.inputError {
+    border: 1px solid #ff9999;
+}
+
+.defaultText {
+    color: #A8A8A8;
+    font-style: italic;
+}
+
+.required {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-left: 3px;
+    color: red;
+}
+
+span#submitError {
+    margin-left: 20px;
+    margin-top: 35px;
+    font-size: 1.16em;
+    font-weight: bold;
+    position: absolute;
+}

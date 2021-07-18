@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <title>The Diabetes Risk Assessment Tool</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="diabetestool.css">
+        <script src="contactform.js"></script>
+  </head>
+  <body>
+      <form id="contact" action="http://www.fallingfalling.com/">
+          <fieldset id="contactFields">
+            <p>
+              <label for="firstName">First Name<span class="required">*</span></label>
+              <input type="text" id="firstName" />
+              <span id="firstNameError" class="error">&nbsp;</span>
+            </p>
+            <p>
+              <label for="lastName">Last Name<span class="required">*</span></label>
+              <input type="text" id="lastName" />
+              <span id="lastNameError" class="error">&nbsp;</span>
+            </p>
+            <p>
+              <label for="title">Title<span class="required">*</span></label>
+              <select name="title" id="title">
+                  <option>Choose title</option>
+                  <option value="Mr">Mr.</option>
+                  <option value="Ms">Ms.</option>
+                  <option value="Mrs">Mrs.</option>
+                  <option value="Miss">Miss.</option>
+                  <option value="Master">Master.</option>
+                </select>
+                <span id="titleError" class="error">&nbsp;</span>
+            </p> 
+            <p>
+              <span class="tooltip-hide" id="tooltip-info">If you do not know your ZHA number, please contact your GP</span>
+              <label for="healthAuthorityNumber"><span class="information-image" id="info-image"></span>Health Authority Number<span class="required">*</span></label>
+              <input type="text" id="healthAuthorityNumber" class="defaultText" />
+              <span id="healthAuthorityNumberError" class="error">&nbsp;</span>
+            </p>
+            <p>
+              <label for="email">Email<span class="required">*</span></label>
+              <input type="email" id="email" />
+              <span id="emailError" class="error">&nbsp;</span>
+            </p>
+            <p>
+              <label for="telephone">Telephone Number</label>
+              <input type="text" id="telephone" />
+              <span id="telephoneError" class="error">&nbsp;</span>
+            </p>
+            <p>
+                <input type="submit" id="Submit" value="Submit" class="button">
+                <span id="submitError" class="error">&nbsp;</span>
+            </p>
+            </fieldset>
+        </form>
+  </body>
+</html>

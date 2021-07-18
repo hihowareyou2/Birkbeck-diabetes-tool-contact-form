@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <title>The Diabetes Risk Assessment Tool</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="diabetestool.css">
+        <script src="diabetestool.js"></script> 
+  </head>
+  <body>
+        <form id="bmiQuiz" name="bmiQuiz" action="#">
+                <fieldset id="bmiQuizFields">
+                    <div>
+                        <p class="question">How old are you?</p>
+                            <p class="column">
+                                <label for="ageOption1">1 - 25</label>
+                                <input type="radio" name="age" id="ageOption1" value="0" checked="checked" />
+                            </p>
+                            <p class="column">
+                                <label for="ageOption2">26 - 40</label>
+                                <input type="radio" name="age" id="ageOption2" value="5" />
+                            </p>
+                            <p class="column">
+                                <label for="ageOption3">41 - 60</label>
+                                <input type="radio" name="age" id="ageOption3" value="8" />
+                            </p>
+                            <p class="column">
+                                <label for="ageOption4">60+</label>
+                                <input type="radio" name="age" id="ageOption4" value="10" />
+                            </p>
+                        <p class="question">What is your BMI?</p>
+                                <p class="column">
+                                    <label for="bmiOption1">0 - 25</label>
+                                    <input type="radio" name="bmi" id="bmiOption1" value="0" checked="checked" />
+                                </p>
+                                <p class="column">
+                                    <label for="bmiOption2">26 - 30</label>
+                                    <input type="radio" name="bmi" id="bmiOption2" value="0" />
+                                </p>
+                                <p class="column">
+                                    <label for="bmiOption3">31 - 35</label>
+                                    <input type="radio" name="bmi" id="bmiOption3" value="9" />
+                                </p>
+                                <p class="column">
+                                    <label for="bmiOption4">35+</label>
+                                    <input type="radio" name="bmi" id="bmiOption4" value="10" />
+                                </p>
+                        <p class="question">Does anybody in your family have diabetes?</p>
+                                <p class="column">
+                                    <label for="familyOption1">No</label>
+                                    <input type="radio" name="family" id="familyOption1" value="0" checked="checked" />
+                                </p>
+                                <p class="column">
+                                    <label for="familyOption2">Grandparent</label>
+                                    <input type="radio" name="family" id="familyOption2" value="7" />
+                                </p>
+                                <p class="column">
+                                    <label for="familyOption3">Sibling</label>
+                                    <input type="radio" name="family" id="familyOption3" value="15" />
+                                </p>
+                                <p class="column">
+                                    <label for="familyOption4">Parent</label>
+                                    <input type="radio" name="family" id="familyOption4" value="15" />
+                                </p>
+                        <p class="question">How would you describe your diet?</p>
+                                <p class="column">
+                                    <label for="dietOption1">Low sugar</label>
+                                    <input type="radio" name="diet" id="dietOption1" value="0" checked="checked" />
+                                </p>
+                                <p class="column">
+                                    <label for="dietOption2">Normal sugar</label>
+                                    <input type="radio" name="diet" id="dietOption2" value="0" />
+                                </p>
+                                <p class="column">
+                                    <label for="ageOption3">Quite high sugar</label>
+                                    <input type="radio" name="diet" id="dietOption3" value="7" />
+                                </p>
+                                <p class="column">
+                                    <label for="ageOption4">High sugar</label>
+                                    <input type="radio" name="diet" id="dietOption4" value="10" />
+                                </p>
+                        </div>
+                        <div>
+                                <button type="submit" id="calculate" class="column">Calculate</button>
+                        </div>
+                   </fieldset>
+            </form>
+            <div id="results" class="results">
+                <h1>Your result</h1>
+                <p id="resultsPara"><a id="resultsLinks" href=""></a></p>
+            </div>
+	</body>
+</html>
