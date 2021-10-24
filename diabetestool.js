@@ -3,11 +3,27 @@ function checkForm() {
             var score = scores();
             var totalRiskLevel = totalScores(score);
             var riskMessage = identifyRisks(score);
+            var modal = document.getElementById("modal");
+            var span = document.getElementsByClassName("close")[0];
             displayResults(riskLevel(totalRiskLevel), highRiskMessage(riskMessage));
             document.getElementById("results").className = "displayResults";
+            // When the user clicks the button, open the modal 
+            modal.style.display = "block";
+            scrollTop();
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+                }
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+              }
             return false;
         }
     }
+
 
 // function to extract numbers out of radio button as an array (scores)
 
@@ -122,4 +138,13 @@ function displayResults(riskLevel, riskMessage) {
     }
 }
 
+// Function to scroll to top once form submitted so modal display
+
+function scrollTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 window.onload = checkForm;
+
+

@@ -1,0 +1,7 @@
+This was the Final Graded submission for my Birkbeck functional JavaScript course.
+
+I am working on taking he 'Diabetes Assessment Tool' as a basis to create a full medical style website. I have been working on making the current pages responsive.
+
+Next I will design and make a homepage and a chatbot. 
+
+This is a work in progress

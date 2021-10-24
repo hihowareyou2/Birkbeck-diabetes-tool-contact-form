@@ -1,7 +1,7 @@
 window.onload = init;
 
 function init(){
-    toggleToolTip();
+    //toggleToolTip();
     firstNameFocus();
     fieldsOnBlur();
     fieldsOnFocus();
@@ -49,16 +49,16 @@ function clearFieldError() {
 }
 
 // Toogle tooltip function
-    function toggleToolTip() { 
-        document.getElementById('info-image').onmouseover = function() {
-            var toolTip = document.getElementById('tooltip-info');
-            toolTip.className = "tooltip";
-        }
-        document.getElementById('info-image').onmouseout = function() {
-            var toolTip = document.getElementById('tooltip-info');
-            toolTip.className = "tooltip-hide";
-        } 	
-    }
+    // function toggleToolTip() { 
+    //     document.getElementById('info-image').onmouseover = function() {
+    //         var toolTip = document.getElementById('tooltip-info');
+    //         toolTip.className = "tooltip";
+    //     }
+    //     document.getElementById('info-image').onmouseout = function() {
+    //         var toolTip = document.getElementById('tooltip-info');
+    //         toolTip.className = "tooltip-hide";
+    //     } 	
+    // }
 
 // Set form focus to First Name
     function firstNameFocus() {
@@ -156,7 +156,7 @@ function checkHAN() {
     var hanDefaultText = "The letters ZHA followed by six numbers, e.g. ZHA346783";
     if (!hanRegex.test(hanID.value)) {
         hanID.classList.add('inputError');
-        errorMessage.innerHTML = "Your Zedland Health Authority Number must begin with ZHA followed by 6 numbers";
+        errorMessage.innerHTML = "Your Zedland Health Authority Number must begin with ZHA followed by 6 numbers, e.g. ZHA346783 <br> If you do not know your ZHA number, please contact your GP";
         if(hanID.value == "") {
             hanID.value = "The letters ZHA followed by six numbers, e.g. ZHA346783";
             hanID.classList.add('defaultText');
@@ -197,50 +197,3 @@ function checkTel() {
     }
     return valid;
 }
-
-
-
-/*                 S O U R C E S                                           S O U R C E S                                      S O U R C E S                                   S O U R C E S                            */
-
-
-
-///////////////////////////////// Toggle Tooltip ////////////////////////////////////////
-
-/*
-
-- Lesson 5 activity materials
-
-*/
-
-/////////////////////////////// Madatory fields //////////////////////////////////////////
-
-/*
-
-- https://www.safaribooksonline.com/videos/javascript-for-beginners/9781789133752/9781789133752-video15_1 - Beginning Javascript, JavaScript Forms Validation
-- https://www.safaribooksonline.com/videos/javascript-for-beginners/9781789133752/9781789133752-video15_2 - Beginning Javascript, Constraint Validation
-- https://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_js
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
-- https://stackoverflow.com/questions/10261986/how-to-detect-string-which-contains-only-spaces
-- http://regexlib.com/REDetails.aspx?regexp_id=26 - I started with this one but made some other adjustments
-- https://forums.asp.net/t/2023592.aspx - I used this one in the comments but adapted it to take a normal first name as well, also to accept lower case letters for names and made some other adjustments
-- https://www.regular-expressions.info/shorthand.html - spaces only
-
-*/
-
-//////////////////////////// Clearing fields on form focus ///////////////////////////////////
-
-/*
-
-- https://titan.dcs.bbk.ac.uk/~lbrod03/jv-2017-t1/form.html
-
-*/
-
-
-/////////////////////////////// Dfault Text //////////////////////////////////////////////////
-
-/*
-
-// - Session 8 activity materials
-// https://stackoverflow.com/questions/17769005/onclick-and-onblur-ordering-issue - onmousedown information to solve onfocus ordering
-
-*/

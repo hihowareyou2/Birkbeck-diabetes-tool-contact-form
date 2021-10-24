@@ -4,14 +4,18 @@
         <meta charset="utf-8">
         <title>The Diabetes Risk Assessment Tool</title>
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="diabetestool.css">
+        <link rel="stylesheet" type="text/css" href="diabetestool-2.css">
         <script src="diabetestool.js"></script> 
   </head>
   <body>
+     <div class="heading">
+        <a href="#"><img src="images/Diabetes-Association.png" alt="Diabetes Association logo" /></a>
+     </div>
         <form id="bmiQuiz" name="bmiQuiz" action="#">
                 <fieldset id="bmiQuizFields">
-                    <div>
+                    <div class="quizContent">
                         <p class="question">How old are you?</p>
+                        <div class="answers">
                             <p class="column">
                                 <label for="ageOption1">1 - 25</label>
                                 <input type="radio" name="age" id="ageOption1" value="0" checked="checked" />
@@ -20,7 +24,7 @@
                                 <label for="ageOption2">26 - 40</label>
                                 <input type="radio" name="age" id="ageOption2" value="5" />
                             </p>
-                            <p class="column">
+                            <p class="column two-column">
                                 <label for="ageOption3">41 - 60</label>
                                 <input type="radio" name="age" id="ageOption3" value="8" />
                             </p>
@@ -28,7 +32,9 @@
                                 <label for="ageOption4">60+</label>
                                 <input type="radio" name="age" id="ageOption4" value="10" />
                             </p>
+                        </div>
                         <p class="question">What is your BMI?</p>
+                        <div class="answers">
                                 <p class="column">
                                     <label for="bmiOption1">0 - 25</label>
                                     <input type="radio" name="bmi" id="bmiOption1" value="0" checked="checked" />
@@ -45,7 +51,9 @@
                                     <label for="bmiOption4">35+</label>
                                     <input type="radio" name="bmi" id="bmiOption4" value="10" />
                                 </p>
+                        </div>
                         <p class="question">Does anybody in your family have diabetes?</p>
+                        <div class="answers">
                                 <p class="column">
                                     <label for="familyOption1">No</label>
                                     <input type="radio" name="family" id="familyOption1" value="0" checked="checked" />
@@ -62,7 +70,9 @@
                                     <label for="familyOption4">Parent</label>
                                     <input type="radio" name="family" id="familyOption4" value="15" />
                                 </p>
+                        </div>
                         <p class="question">How would you describe your diet?</p>
+                        <div class="answers">
                                 <p class="column">
                                     <label for="dietOption1">Low sugar</label>
                                     <input type="radio" name="diet" id="dietOption1" value="0" checked="checked" />
@@ -80,14 +90,22 @@
                                     <input type="radio" name="diet" id="dietOption4" value="10" />
                                 </p>
                         </div>
+                       </div>
                         <div>
                                 <button type="submit" id="calculate" class="column">Calculate</button>
                         </div>
                    </fieldset>
             </form>
-            <div id="results" class="results">
-                <h1>Your result</h1>
+            <footer>
+                <p><a href="#">Home</a></p>
+                <p><a href="contactform.html">Contact Form</a></p>
+            </footer>
+        <div id="modal" class="modal">
+          <div id="results" class="results">
+                <span class="close">&times;</span>
+                <h2>Your result</h2>
                 <p id="resultsPara"><a id="resultsLinks" href=""></a></p>
             </div>
+        </div>
 	</body>
 </html>
